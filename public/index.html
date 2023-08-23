@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Debug drawer of colliders using Box2D-WASM, Three.js, and JavaScript</title>
+</head>
+
+<body>
+    <p>Buy me a coffee: <a href="https://boosty.to/ivan_8observer8/donate" target="_blank">https://boosty.to/ivan_8observer8/donate</a> This service supports PayPal. You can perform single sign-on with your Google account.</p>
+
+    <p><a href="https://github.com/8Observer8/debug-drawer-box2dwasm-threejs-js" target="_blank">GitHub repo with Rollup guide</a></p>
+
+    <p>Playgrounds:</p>
+
+    <ul>
+        <li><a href="https://replit.com/@8Observer8/Debug-drawer-using-Box2D-WASM-Threejs-JS" target="_blank">Replit</a></li>
+        <li><a href="https://plnkr.co/edit/f94oZ5NMSNEZLhMm?preview" target="_blank">Plunker</a></li>
+        <li><a href="https://glitch.com/edit/#!/mighty-jealous-factory" target="_blank">Glitch</a></li>
+    </ul>
+
+    <p>Discussion: <a href="https://github.com/Birch-san/box2d-wasm/discussions/70" target="_blank">Box2D-WASM discussion</a></p>
+
+    <!-- Since importmap is not yet supported by all browsers, it is
+        necessary to add the polyfill es-module-shims.min.js -->
+    <script async src="https://unpkg.com/es-module-shims@0.1.7/dist/es-module-shims.min.js"></script>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "box2d-wasm": "https://8observer8.github.io/lib/box2d-wasm-7.0.0-box2d-2.4.1/box2d-wasm.min.js",
+                "three": "https://unpkg.com/three@0.154.0/build/three.module.js",
+                "orbit-controls": "https://unpkg.com/three@0.154.0/examples/jsm/controls/OrbitControls.js"
+            }
+        }
+    </script>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
